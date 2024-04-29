@@ -1,6 +1,6 @@
 # Ex04 Places Around Me
-## Date: 
-22/04/2024
+## Date: 29.04.2024
+
 ## AIM
 To develop a website to display details about the places around my house.
 
@@ -13,10 +13,10 @@ Create a Django admin interface.
 Download your city map from Google.
 
 ### STEP 3
-Using ```<map>``` tag name the map.
+Using <map> tag name the map.
 
 ### STEP 4
-Create clickable regions in the image using ```<area>``` tag.
+Create clickable regions in the image using <area> tag.
 
 ### STEP 5
 Write HTML programs for all the regions identified.
@@ -25,166 +25,214 @@ Write HTML programs for all the regions identified.
 Execute the programs and publish them.
 
 ## CODE
-### map.html
-~~~
-<html>
-    <head>
-        <title>My City</title>
-    </head>
-    <body>
-        <h1 align="center">
-            <font color="green"><b>Pallikonda</b></font>
-        </h1>
-        <h3 align="center">
-            <font color="orange"><b>HENRIPRASATH S (212223230077)</b></font>
-        </h3>
-        <center>
-            <img src="map.png" usemap="#MyCity" height="610" width="1450">
-            <map name="MyCity">
-                <area shape="rect" coords="300,300,900,400" href="home.html" title="My Home Town">
-                <area shape="circle" coords="500,200,60" href="temple.html" title="Sri Ranganathar Temple">
-                <area shape="rect" coords="50,50,400,400" href="river.html" title="Palar River">
-                <area shape="rect" coords="500,500,1328,1691" href="mountain.html" title="Mountain">
-            </map>
-        </center>
-    </body>
-</html>
-~~~
-### home.html
-~~~
-<html>
-    <head>
-        <title>
-            My Home Town
-        </title>
-    </head>
-    <body bgcolor="orange">
-        
-            <h1 align="center"><font color="red">PALLIKONDA</font></h1>
-            <h4 align="center" font="italic">
-            <font color="blue"><h5 align="center" font="algerian"> Panchayat
-            </h5></b>
-            </font> 
-            </h4>
-            <hr size="3" color="red">
-            <p align="justify">
-                <font face="Georgia" size="5">
-        
 
-<br>Pallikonda is a selection grade town panchayat in Vellore district in the Indian state of Tamil Nadu. 
-<br>It connects with 90 villages and the town of Gudiyatham.
-<br>History
-Pallikonda hosts a large non-sepulchral megalithic assembly with a vast capstone supported by three equally enormous boulders. The presence of the megalith was officially reported by Col. Congreve of the Madras Regiment in 1845 and was included in the book "Rude Stone Monuments" by J. Fergusson in 1872.[2] The capstone projections are positioned so that they point towards north and south. The surface of the capstone is riddled with more than 75 cupules, built in clusters. Cupules of a large cluster form direct sight-lines to the position of the stars Vega and Capella during solstice sun rise and sunset.[3]
+```
+map.html
 
-"Uttara Ranganathan" temple beside the Palar river bank has the deity is "Anantashayana", the sleeping form of Vishnu. Since the deity lies north of the river Palar, it is termed as "Uttara" (North).
-</font>
-</p>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My City</title>
+</head>
+
+<body>
+    <h1 align="center">
+        <font color="red"><b>Villupuram</b></font>
+    </h1>
+    <h3 align="center">
+        <font color="blue"><b>Thamizh kumaran (212223240166)</b></font>
+    </h3>
+    <center>
+        <img src="map1.png" usemap="#MyCity" height="914" width="1920">
+        <map name="MyCity">
+            <area shape="rectangle" coords="785,332,946,405" href="rail.html" title="Railaway station">
+            <area shape="rectangle" coords="1690,800,1863,895" href="sacredherat.html" title="Sacred Heart Convent">
+            <area shape="rectangle" coords="657,499,824,587" href="dell.html" title="dell">
+            <area shape="rectangle" coords="243,445,397,520" href="titan.html" title="Titan world">
+            <area shape="rectangle" coords="1676,323,1804,419" href="sportsstadium.html"
+                title="villupuram district sports stadium">
+        </map>
+    </center>
 </body>
+
 </html>
-~~~
-### temple.html
-~~~
-<html>
-    <head>
-        <title>
-            My Home Town
-        </title>
-    </head>
-    <body bgcolor="gold">
-        <h1 align="center"><font color="red">PALLIKONDA</font></h1>
-        <h4 align="center" font="italic">
-        <font color="blue">  <b>Arulmigu Sri Aranganayagi samedha Sri Uthira Ranganathar Swamy Temple.</b>
-        </font> 
-        </h4>
-        <hr size="3" color="red">
-        <p align="justify">
-            <font face="Georgia" size="5">
-        It is 2000 years old temple associated with the history of Sri Varadharaja Perumal Kanchipuram.
-<center>
-    <img src="Temple1.jpg">
-    <br>The main Temple Tower (Rajagopuram)<br>
-    <img src="Divine2.jpg">
-    <br>The lord Vishnu is in Sayana Thirukolam on Adhishesha(five headed snake). 
-</center>
-</font>
-      </p>
-    </body>
-</html>
-~~~
-### river.html
-~~~
-<html>
-    <head>
-        <title>
-            My Home Town
-        </title>
-    </head>
-    <body bgcolor="skyblue">
-        <body bgcolor="gold">
-            <h1 align="center"><font color="red">PALLIKONDA</font></h1>
-            <h4 align="center" font="italic">
-            <font color="blue"><h5 align="center" font="algerian">Palar River -- Water Source
-            </h5></b>
-            </font> 
-            </h4>
-            <hr size="3" color="red">
-            <p align="justify">
-                <font face="Georgia" size="5">
-        
-        <br>It rises in the Nandi Hills in Chikkaballapura district of Karnataka state
-         <br> Flows
-          <br>93 kilometres (58 mi) in Karnataka,
-          <br> 33 kilometres (21 mi) in Andhra Pradesh and 
-          <br>222 kilometres (138 mi) in Tamil Nadu 
-          <br>Before reaching its confluence into the Bay of Bengal at Vayalur about 75 kilometres (47 mi) south of Chennai. 
-          <br>It flows as an underground river for a long distance only to emerge near Bethamangala town, from where, gathering water and speed, it flows eastward down the Deccan Plateau.
-          <br>The Towns of Bethamangala, Santhipuram, Kuppam,Mottur, Ramanaickenpet, Vaniyambadi, Ambur, Melpatti, Gudiyatham, Pallikonda, Anpoondi, Melmonavoor, Vellore, Katpadi, Melvisharam, Arcot, Ranipet, Walajapet, Kanchipuram, Walajabad, Chengalpattu, Kalpakkam, and Lattur are located on the banks of the Palar River.
-          <br> Of the seven tributaries,
-         <br>the chief tributary is the Cheyyar River.
-        <center><img src="palar.jpg"></center>
-    </font>
+
+
+rail.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Railaway station</title>
+</head>
+
+<body bgcolor="#abf7b1">
+    <h1 align="center">
+        <font color="red"><b>Villupuram</b></font>
+    </h1>
+    <h3 align="center">
+        <font color="blue"><b>Railaway station</b></font>
+    </h3>
+    <hr size="3" color="red">
+    <p align="justify">
+        <font face="Georgia" size="5">
+            Villupuram Junction is a railway station in Villupuram, Tamil Nadu. Being a prominent railway station, it
+            serves as the distribution point of rail traffic from Chennai, the state capital of Tamil Nadu, towards the
+            southern and central parts of the state. It is the third largest junction by number of branch lines in the
+            state of Tamil Nadu after Salem junction,Tiruchchirapalli Junction . It is one of the A Grade train stations
+            in Tamil Nadu.[1]
+        </font>
     </p>
-    </body>
-    </html>
-~~~
-### mountain.html
-~~~
-<html>
-    <head>
-        <title>
-            My Home Town
-        </title>
-    </head>
-    
-        <body bgcolor="gray">
-            <h1 align="center"><font color="red">PALLIKONDA</font></h1>
-            <h4 align="center" font="italic">
-            <font color="blue"><h5 align="center" font="algerian"> MOUNTAIN && FOREST
-            </h5></b>
-            </font> 
-            </h4>
-            <hr size="3" color="red">
-            <p align="justify">
-                <font face="Georgia" size="5">
-        
-
-
- <center> <img src="mount.jpg"></center>  
-                </font>
-                </p>
 </body>
 </html>
-~~~
+
+sacredherat.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>sacredheart</title>
+</head>
+
+<body bgcolor="pink">
+    <h1 align="center">
+        <font color="red"><b>Villupuram</b></font>
+    </h1>
+    <h3 align="center">
+        <font color="green"><b>sacredheart</b></font>
+    </h3>
+    <hr size="3" color="red">
+    <p align="justify">
+        <font face="Georgia" size="5">
+            Sacred Heart Convent Anglo Indian Higher Secondary School is a renowned educational institution located in Villupuram, Tamil Nadu.
+            Established on 21st January 1938, it has a rich history and continues to provide quality education to students.
+
+            One of the defining features of Sacred Heart Convent is its emphasis on holistic development. Beyond academics, the school offers 
+            a plethora of co-curricular activities, ranging from sports to music, drama, and community service. These activities not only complement
+            the academic curriculum but also help students discover their passions, hone their talents, and develop essential life skills such as teamwork,
+            leadership, and time management.
+        </font>
+    </p>
+</body>
+
+</html>
+
+dell.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dell</title>
+</head>
+
+<body bgcolor="yellow">
+    <h1 align="center">
+        <font color="red"><b>Villupuram</b></font>
+    </h1>
+    <h3 align="center">
+        <font color="blue"><b>Dell</b></font>
+    </h3>
+    <hr size="3" color="red">
+    <p align="justify">
+        <font face="Georgia" size="5">
+            Dell Inc. is an American based technology company. It develops, sells, repairs, and supports computers and
+            related products and services. Dell is owned by its parent company, Dell Technologies.
+
+            Dell sells personal computers (PCs), servers, data storage devices, network switches, software, computer
+            peripherals, HDTVs, cameras, printers, and electronics built by other manufacturers. The company is known
+            for how it manages its supply chain and electronic commerce. This includes Dell selling directly to
+            customers and delivering PCs that the customer wants. Dell was a pure hardware vendor until 2009 when it
+            acquired Perot Systems. Dell then entered the market for IT services. The company has expanded storage and
+            networking systems. It is now expanding from offering computers only to delivering a range of technology for
+            enterprise customers.
+        </font>
+    </p>
+</body>
+
+</html>
+
+titan.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Titan</title>
+</head>
+
+<body bgcolor="#aecbe9">
+    <h1 align="center">
+        <font color="red"><b>Villupuram</b></font>
+    </h1>
+    <h3 align="center">
+        <font color="blue"><b>Titan</b></font>
+    </h3>
+    <hr size="3" color="red">
+    <p align="justify">
+        <font face="Georgia" size="5">
+            Titan Company Limited is an Indian company that mainly manufactures fashion accessories such as jewellery,
+            watches and eyewear. Part of the Tata Group and started as a joint venture with the TIDCO, the company has
+            its corporate headquarters in Electronic City, Bangalore, and registered office in Hosur, Tamil Nadu.
+
+            Titan company commenced operations in 1984 under the name Titan Watches Limited. In 1994, Titan diversified
+            into jewellery with Tanishq and subsequently into eyewear with Titan Eyeplus. In 2005, it launched its youth
+            fashion accessories brand Fastrack.[9] The company is the largest branded jewellery maker in India, with
+            more than 80% of its total revenues coming from the jewellery segment. As of 2022, Titan has a 6% market
+            share in India's jewellery market. As of 2019, it is also the fifth-largest watch manufacturer in the world.
+        </font>
+    </p>
+</body>
+
+</html>
+
+sportsstadium.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>villupuram district sports stadium</title>
+</head>
+
+<body bgcolor="#DBEAB4">
+    <h1 align="center">
+        <font color="red"><b>Villupuram</b></font>
+    </h1>
+    <h3 align="center">
+        <font color="blue"><b>villupuram district sports stadium</b></font>
+    </h3>
+    <hr size="3" color="red">
+    <p align="justify">
+        <font face="Georgia" size="5">
+            in the heart of Villupuram, amidst the lush landscapes and vibrant culture of Tamil Nadu, lies a place where
+            dreams are nurtured, champions are born, and the spirit of sportsmanship thrives. The Villupuram District
+            Sports Stadium, often called the "Pride of Sports" in this region, is more than just an arena; it's a symbol
+            of the community's dedication to athletic excellence.
+
+            Situated on the outskirts of Villupuram town, the stadium is a sprawling complex that caters to a multitude
+            of sports and recreational activities. Its prominent feature is a well-maintained cricket field, where local
+            and regional cricket matches are held regularly. The deafening cheers and enthusiastic applause of the crowd
+            resonate through the stadium, giving life to the very spirit of the game.
+        </font>
+    </p>
+</body>
+</html>
+```
+
+
 ## OUTPUT
-![Screenshot 2024-04-22 153410](https://github.com/Henriprasath/NearMe/assets/144979077/8f8a8a4b-01c8-4984-a63c-0c8493a97e45)
 
-![Screenshot 2024-04-22 153847](https://github.com/Henriprasath/NearMe/assets/144979077/9bfbf10e-3ffa-4010-b103-a19ac50a32f3)
-
-![Screenshot 2024-04-22 155546](https://github.com/Henriprasath/NearMe/assets/144979077/d615c541-2882-4831-9612-5419fdcb8387)
-
-![Screenshot 2024-04-22 155837](https://github.com/Henriprasath/NearMe/assets/144979077/ae080663-b072-42c7-a1ca-52524bbd7395)
-
-![Screenshot 2024-04-22 160553](https://github.com/Henriprasath/NearMe/assets/144979077/0df11da1-f5b2-4164-8ab6-5ada3bb552a9)
+![image](https://github.com/Thamizhjo/NearMe/assets/123891476/185b9944-d21e-477e-8d58-625236d7b206)
+![image](https://github.com/Thamizhjo/NearMe/assets/123891476/708f00fb-983a-4eca-b616-900020991de3)
+![image](https://github.com/Thamizhjo/NearMe/assets/123891476/ff5fca64-3a67-4ecc-ac67-8c9e1c4e348b)
+![image](https://github.com/Thamizhjo/NearMe/assets/123891476/7bec9181-123e-4cae-8ef6-2f82ecc52933)
+![image](https://github.com/Thamizhjo/NearMe/assets/123891476/a09d5817-37ae-4b56-9561-f7fb69fa6439)
+![image](https://github.com/Thamizhjo/NearMe/assets/123891476/31154205-74bd-4eee-a736-ec844f29705d)
 
 ## RESULT
 The program for implementing image maps using HTML is executed successfully.
